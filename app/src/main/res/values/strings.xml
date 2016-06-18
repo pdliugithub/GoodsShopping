@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">........</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">o^=_=^o</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sub_sort">""</string>
+    <string name="title_activity_goods_details">详情</string>
+    <string name="title_activity_map">百度地图</string>
+    <string name="title_activity_zxing">二维码</string>
+
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+</resources>

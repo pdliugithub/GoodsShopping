@@ -1,0 +1,54 @@
+﻿
+
+网络：OkHttp
+/*************************------OkHttp--------*****************************************************/
+网络请求：OKHttp 依赖：compile 'com.squareup.okhttp:okhttp:2.4.0'
+ 权限：<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+       <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
+解析：Gson
+/*********************---------Gson----------******************************************************/
+.jar
+
+图片：ImageLoader
+/********************---------ImageLoader------****************************************************/
+
+
+/************************************/滑动销毁activity
+SwipeBackActivity.java
+SwipeBackLayout.java
+ViewDragHelper.java
+
+
+
+               本月项目功能（版本更新，收藏，缓存及清空缓存，制定项目开发进度计划表，shareSDK分享，支付宝，系统自登录，注册（自动登录，登录验证，退出登录））
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        支付流程-----》发起支付，支付宝客户端--》请求支付宝服务器进行支付，
+
+        1.编码规范（着重强调）
+        2.制定项目开发进度计划表
+        3.引导页，网络类型判断，版本更新，收藏，缓存及清空缓存，图片异步加载，移动互联实现，ListView下拉刷新，上拉加载，图片轮播，WebView加载网页, jsoup解析
+        4.购物车的全选，反选；
+          订单管理；
+          支付
+
+        5.XUtils，ImageLoader
+        6.百度地图定位， shareSDK分享，支付宝，zxing二维码扫描
+        7.Android-PullToRefresh实现下拉刷新和上拉加载，
+         瀑布流效果
+
+
+        8.SlidingMenu（左右侧滑），ViewPager（fragment左右滑动切换，图片轮播）， Fragment（标签页），RadioButton（标签页选选项卡）
+        9.引导页，判断网络状态及类型，加载进度
+        10.系统自登录，注册（自动登录，登录验证，退出登录）
+        11.文件缓存，清空缓存
+        12.sqlite实现收藏
+        13.购物车维护
+        14.版本更新
+        15.ListView/GridView/瀑布流 下拉刷新，上拉加载，图片异步加载
+        16.支付功能
+        17.一键退出功能
+        18.包结构，（包，类，变量，方法）命名规范，工具类的使用
+        19.项目的UI效果高仿，UE效果佳

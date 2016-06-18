@@ -1,0 +1,89 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.bawei.goodsshopping.fragment.KnowThingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="购物车详情"
+            android:textColor="@color/colorRed"
+            android:padding="10dp"
+            android:alpha="0.8"
+            android:background="@color/colorGrey"
+            android:layout_alignParentTop="true"
+            />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/id_know_swipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ListView
+                android:id="@+id/id_know_listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:alpha="0.7"
+            android:background="@color/colorGreen"
+            >
+
+            <CheckBox
+                android:id="@+id/id_know_cb_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkbox_select"
+                android:button="@null"
+                android:gravity="center"
+                />
+            
+            <TextView
+                android:id="@+id/id_know_totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥:"
+                android:textSize="16dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:layout_toRightOf="@+id/id_know_cb_all"
+                android:textColor="@color/colorRed"
+                />
+
+            <TextView
+                android:id="@+id/id_know_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/colorRed"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

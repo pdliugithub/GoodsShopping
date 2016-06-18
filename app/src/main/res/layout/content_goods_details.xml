@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.bawei.goodsshopping.main.GoodsDetailsActivity"
+    tools:showIn="@layout/activity_goods_details"
+    >
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/details_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- top-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!-- 详情页面   返回按钮-->
+            <ImageView
+                android:id="@+id/details_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-25dp"
+                android:src="@mipmap/global_btn_icon_back"
+                />
+
+            <!-- 详情页面的ViewPager展示-->
+            <android.support.v4.view.ViewPager
+                android:id="@+id/goods_detail_vPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                >
+
+            </android.support.v4.view.ViewPager>
+
+            <!-- ViewPager提示图标-->
+            <LinearLayout
+                android:id="@+id/viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25px"
+                android:gravity="center"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <!-- 显示商品名称-->
+            <TextView
+                android:id="@+id/goods_details_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="加载中。。。"
+                android:textSize="@dimen/textTitleSize"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                />
+
+            <!-- 商品的价格 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/goods_details_salePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/textTitleSize"
+                    />
+
+                <TextView
+                    android:id="@+id/goods_details_marketPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/colorGrey"
+        android:padding="5dp"
+        >
+
+
+        <CheckBox
+            android:id="@+id/goods_details_shoucang"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:button="@null"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/checkbox_love_select"
+
+            />
+
+
+        <ImageView
+            android:id="@+id/goods_details_addtocart"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/add_to_cart"
+            android:layout_marginLeft="5dp"
+            />
+
+        <ImageView
+            android:id="@+id/goods_details_gouwuche"
+            android:layout_height="match_parent"
+            android:layout_width="50dp"
+            android:src="@mipmap/gouwuche"
+             android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

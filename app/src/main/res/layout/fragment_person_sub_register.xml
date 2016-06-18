@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.bawei.goodsshopping.fragment.PersonSubRegisterFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userNameWrapper_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorGreen"
+            app:hintAnimationEnabled="true"
+            android:hint="你的账号"
+            >
+
+            <EditText
+                android:id="@+id/userName_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/userPasswordWrapper_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/colorGreen"
+            app:hintAnimationEnabled="true"
+            android:hint="你的密码"
+            >
+
+            <EditText
+                android:id="@+id/userPassword_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/id_btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorAccent"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

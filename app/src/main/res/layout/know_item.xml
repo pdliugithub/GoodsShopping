@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@color/colorWhite"
+
+    >
+
+
+    <CheckBox
+        android:id="@+id/know_item_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/checkbox_select"
+        android:button="@null"
+        />
+
+
+    <ImageView
+        android:id="@+id/know_item_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/loading_error_tips_image"
+        android:layout_toRightOf="@+id/know_item_cb"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/know_item_img"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/know_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/know_item_salePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/know_item_name"
+            android:textColor="@color/colorRed"
+            android:textSize="14dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/know_item_salePrice"
+            >
+
+            <TextView
+                android:id="@+id/know_item_cut"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="-"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:id="@+id/know_item_count"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:text="1"
+                android:layout_toRightOf="@+id/know_item_cut"
+                />
+            <TextView
+                android:id="@+id/know_item_add"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:textSize="16dp"
+                android:text="+"
+                android:layout_toRightOf="@+id/know_item_count"
+                />
+
+            <ImageView
+                android:id="@+id/know_item_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lib_story_icon_delete_normal"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
